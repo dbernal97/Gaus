@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Arial','Times New Roman', Times, serif;
+}
+
+a{
+    color:#000;
+}
+
+/* responsive for cellphones */
+
+#logo{
+    background-color: #ffffff;   
+}
+
+#logo img{
+    display: block;
+    width: 90%;
+}
+.header{
+    background-color: rgb(10, 0, 66);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.925);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+    height: 600px;
+    background-color: rgb(0, 11, 46);
+}
+
+.header ul a{
+    display: block;
+    outline: .5px solid white;
+    color: #ffffff;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header ul a:hover{
+    background-color: yellow;
+}
+
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.header .menu-icon{
+    display: inline-block;
+    clear: both;
+    padding: 15px 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background-color: rgb(221, 221, 221);;
+    display: block;
+    height: 5px;
+    width: 30px;
+    position: relative;
+    border-radius: 3px;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background-color: rgb(221, 221, 221);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    transition: all .1s ease-out;
+    top: 10px;
+}
+.header .menu-icon .nav-icon:after{
+    background-color: rgb(221, 221, 221);
+    content: "";
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all .09s ease-out;
+    top: -10px;
+}
+
+.header .menu-btn{
+    display: none;
+}   
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#bg-about{
+    clip-path: polygon(0% 0%, 51% 0, 56% 51%, 52% 100%, 0% 100%);
+    border-radius: 2px;
+    background-color: rgb(1, 0, 53);
+}
+
+#about h1{
+    margin-top: 25px;
+    text-align: left;
+    padding-left: 15px;
+    color:#fff;
+}
+
+#about p{
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    display: block;
+    padding:5px;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgba(238, 238, 238, 0.781);
+    border-radius: 4px;
+}
+
+#services{
+    margin-top: 15px;
+    padding: 7px 7px 7px 0px;
+    background-color: rgb(238, 238, 238);
+
+    #bg-services{
+        clip-path: polygon(0% 0%, 65% 0, 71% 47%, 66% 100%, 0% 100%);
+        border-radius: 2px;
+        background-color: rgb(1, 0, 53);
+    
+    }
+
+    h1{
+        margin-top: 15px;
+        text-align: left;
+        padding-left: 15px;
+        color:#fff;
+    }
+
+    h2{
+        padding:10px;
+        background-color: rgb(245, 245, 245);
+        display: block;
+        text-align: left; 
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-left: 5px solid rgb(1, 0, 32);
+        padding-left: 10px;
+        opacity: .9;
+    }
+
+    p{
+        margin: 10px;
+        font-family: Helvetica, sans-serif;
+        opacity: .9;
+    }
+
+    img{
+        display: block;
+        width: 80%;
+        height: 170px;
+        margin: auto;
+        border-radius: 3px;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.925);
+        opacity: .9;
+    }
+}
+
+#why{
+    margin-top: 15px;
+    padding: 7px;
+    background-color: rgb(238, 238, 238);
+
+    #bg-why{
+        clip-path: polygon(0% 0%, 65% 0, 71% 47%, 66% 100%, 0% 100%);
+        border-radius: 2px;
+        background-color: rgb(1, 0, 53);
+    
+    }
+
+    h1{
+        margin-top: 15px;
+        text-align: left;
+        padding-left: 15px;
+        color:#fff;   
+    }
+
+    img{
+        margin-top: 15px;
+        height: 45px;
+        display: block;
+    }
+
+    p{
+        padding: 10px;
+        float: left;
+    }
+}
+
